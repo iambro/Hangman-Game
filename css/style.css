@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: gray;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 2rem;
+}
+
+header {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.password-box {
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+
+    letter-spacing: 1rem;
+    font-size: 3rem;
+}
+
+.letters-box {
+    background-color: red;
+    width: 50%;
+    text-align: center;
+    min-height: 10rem;
+}
+
+.picture-box {
+    background-color: green;
+    width: 50%;
+    text-align: center;
+}
+
+.letters-box ul {
+    list-style: none;
+}
+
+.letters-box ul li {
+    display: inline-block;
+}
+
+
+
+
+
+.active {
+    cursor: pointer;
+}
+
+.active:hover {
+    color: aqua;
+}
+
+.inactive {
+    cursor: default;
+    color: white;
+}
