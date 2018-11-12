@@ -32,7 +32,7 @@ function getCountry(code) {
 }
 
 // BACKUP PASSWORD //
-var backupPass = ['Chongqing', 'Shanghai', 'Delhi', 'Beijing', 'Dhaka', 'Mumbai', 'Lagos', 'Chengdu', 'Karachi', 'Guangzhou', 'Istanbul', 'Tokyo', 'Tianjin', 'Moscow', 'Sao Paulo', 'Kinshasa', 'Baoding', 'Lahore', 'Cairo', 'Seoul'];
+const backupPass = ['Chongqing', 'Shanghai', 'Delhi', 'Beijing', 'Dhaka', 'Mumbai', 'Lagos', 'Chengdu', 'Karachi', 'Guangzhou', 'Istanbul', 'Tokyo', 'Tianjin', 'Moscow', 'Sao Paulo', 'Kinshasa', 'Baoding', 'Lahore', 'Cairo', 'Seoul'];
 
 // GAME FUNCTIONALITY //
 let letterArr, country, password, cipher, passwordArr, roundNb;
