@@ -37,6 +37,7 @@ header {
 }
 
 .letters-box {
+    border-right: 1px solid #05050517;
     background-color: #607D8B;
     width: 50%;
     text-align: center;
@@ -51,6 +52,7 @@ header {
 }
 
 .picture-box {
+    border-left: 1px solid #05050517;
     background-color: #607D8B;
     width: 50%;
     text-align: center;

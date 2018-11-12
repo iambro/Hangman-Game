@@ -12,10 +12,12 @@
         width: 100%;
         font-size: 2rem;
         min-height: 10rem;
+        border-right: none;
     }
 
     .picture-box {
         width: 100%;
+        border-left: none;
     }
 
     .active {
@@ -51,10 +53,12 @@
         width: 50%;
         font-size: 2rem;
         min-height: 15rem;
+        border-right: none;
     }
 
     .picture-box {
         width: 50%;
+        border-left: none;
     }
 
     .active {
