@@ -1,4 +1,8 @@
 @media screen and (max-width: 600px) {
+    .password-box {
+        font-size: 3rem;
+    }
+
     .letters-box {
         width: 100%;
         font-size: 2rem;
@@ -8,7 +12,6 @@
     .picture-box {
         width: 100%;
     }
-
 
     .active {
         width: 30px;
@@ -39,7 +42,6 @@
     .picture-box {
         width: 50%;
     }
-
 
     .active {
         width: 30px;
