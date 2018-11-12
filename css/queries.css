@@ -1,6 +1,11 @@
 @media screen and (max-width: 600px) {
+    header {
+        font-size: 1.6rem;
+        padding: 0.2rem;
+    }
+
     .password-box {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .letters-box {
@@ -26,11 +31,20 @@
     img {
         height: 80%;;
     }
+
+    button {
+        font-size: 1.6rem;
+    }
 }
 
 @media screen and (max-width: 850px) and (orientation: landscape) {
+    header {
+        font-size: 1.6rem;
+        padding: 0.2rem;
+    }
+
     .password-box {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .letters-box {
@@ -55,5 +69,9 @@
 
     img {
         max-height: 15rem;
+    }
+
+    button {
+        font-size: 1.6rem;
     }
 }

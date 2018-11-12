@@ -39,6 +39,7 @@ let letterArr, country, password, cipher, passwordArr, roundNb;
 
 let btn = document.querySelector('.btn');
 btn.addEventListener('click', start);
+let active = document.querySelectorAll('.active');
 
 function start() {
     letterArr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -50,8 +51,6 @@ function start() {
     addListeners();
 }
 
-
-//SZYFROWANIE HASŁA
 function encryptPassword() {
     cipher = '';
     let length = password.length;
@@ -66,8 +65,6 @@ function encryptPassword() {
     document.querySelector('.password').innerHTML = cipher;
 }
 
-
-//SPRAWDZANIE LITER
 function checkLetter() {
     if (passwordArr.some(x => x === this.id) === true) {
         removeLetter(this.id);
@@ -82,11 +79,14 @@ function checkLetter() {
         }
         checkLose();   
     } 
+    removeListener(this.id);
     document.getElementById(this.id).classList.add('inactive');
     document.getElementById(this.id).classList.remove('active');
 }
 
-let active = document.querySelectorAll('.active');
+function removeListener(x) {
+    document.getElementById(x).removeEventListener('click', checkLetter);
+}
 
 function addListeners() {
     for (let i = 0; i < active.length; i++) {
@@ -94,14 +94,12 @@ function addListeners() {
     }
 }
 
-
 function removeLetter(x) {
     let index = letterArr.indexOf(x);
          if (index !== -1) {
              letterArr.splice(index, 1)
          }
 }
-
 
 function restart() {
     for (i = 0; i < letterArr.length; i++) {
