@@ -1,0 +1,57 @@
+@media screen and (max-width: 600px) {
+    .letters-box {
+        width: 100%;
+        font-size: 2rem;
+        min-height: 10rem;
+    }
+
+    .picture-box {
+        width: 100%;
+    }
+
+
+    .active {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .inactive {
+        width: 30px;
+        height: 30px;
+    }
+
+    img {
+        height: 80%;;
+    }
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+    .password-box {
+        font-size: 3rem;
+    }
+
+    .letters-box {
+        width: 50%;
+        font-size: 2rem;
+        min-height: 15rem;
+    }
+
+    .picture-box {
+        width: 50%;
+    }
+
+
+    .active {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .inactive {
+        width: 30px;
+        height: 30px;
+    }
+
+    img {
+        max-height: 15rem;
+    }
+}

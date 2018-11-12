@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: gray;
+    background-color: #607D8B;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 2rem;
 }
@@ -17,6 +17,7 @@ body {
 header {
     font-size: 3rem;
     text-align: center;
+    padding: 1rem;
 }
 
 .container {
@@ -25,48 +26,70 @@ header {
 }
 
 .password-box {
-    background-color: blue;
+    background-color: #607D8B;
+    color: #FFC107;
     width: 100%;
     text-align: center;
 
     letter-spacing: 1rem;
-    font-size: 3rem;
+    font-size: 4rem;
+    padding: 1rem;
 }
 
 .letters-box {
-    background-color: red;
+    background-color: #607D8B;
     width: 50%;
     text-align: center;
-    min-height: 10rem;
+    font-size: 3rem;
+    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center; 
+    justify-content: center;
+    min-height: 35rem;
+    padding-left: 1rem;
 }
 
 .picture-box {
-    background-color: green;
+    background-color: #607D8B;
     width: 50%;
     text-align: center;
 }
 
-.letters-box ul {
-    list-style: none;
+
+button {
+    background-color: #FFC107;
+    color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    padding: 3px;
+    cursor: pointer;
+    transition: transform .2s;
 }
 
-.letters-box ul li {
-    display: inline-block;
+button:hover {
+    transform: scale(1.2);
 }
-
-
-
-
 
 .active {
     cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    margin: 2px;
 }
 
 .active:hover {
-    color: aqua;
+    color: #FFC107;
+    border: 1px solid #FFC107;
+    border-radius: 10px;
 }
 
 .inactive {
     cursor: default;
     color: white;
+    width: 45px;
+    height: 45px;
+    margin: 2px;
 }
