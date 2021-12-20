@@ -16,7 +16,7 @@ function getWord() {
 }
 
 function getCountry(code) {
-    let countryUrl = 'https://restcountries.eu/rest/v2/alpha/' + code;
+    let countryUrl = 'https://restcountries.eu/rest/v3/alpha/' + code;
     let xmlhttp = new XMLHttpRequest();
     xmlhttp.open('GET', countryUrl, false); 
     xmlhttp.send();
